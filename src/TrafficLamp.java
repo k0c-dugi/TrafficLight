@@ -22,11 +22,9 @@ public class TrafficLamp {
     }
 
     public static void lighten(int duration, lampColors currentColor) throws InterruptedException {
-        while(duration > 0){
             System.out.println(currentColor);
-            Thread.sleep(100);
+            Thread.sleep(duration*100);
             duration--;
-         }
         changeColor();
         System.out.println(currentColor);
         Thread.sleep(300);

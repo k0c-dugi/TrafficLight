@@ -1,7 +1,3 @@
-
-
-
-
 public class LampController {
     int lane = 0;
     int cycle = 0;
@@ -16,7 +12,7 @@ public class LampController {
         return lane;
     }
 
-    private void durationCalculator(int[] carsOnLane, int lane) throws ArithmeticException{
+    public void durationCalculator(int[] carsOnLane, int lane) throws ArithmeticException{
         int duration = 0;
         for(int cars : carsOnLane) {
             totalCars += cars;

@@ -6,7 +6,7 @@ import javafx.scene.shape.Rectangle;
 
 public class VehicleDrawing {
 
-    public Pane drawVehicle(double x, double y, Color color) {
+    public static Pane drawVehicle(double x, double y, Color color) {
         Pane vehiclePane = new Pane();
 
         // Araç gövdesi (basit dikdörtgen)

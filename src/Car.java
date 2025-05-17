@@ -1,6 +1,8 @@
 
 
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+
 public class Car implements Vehicle {
 
     Direction direction;
@@ -20,11 +22,14 @@ public class Car implements Vehicle {
         //ortasında ise dönmesini sağlayacağız. Bu esnada muhtemelen directionFrom değişkeni
         //güncellenecek
         direction = direction.turnLeft();
+        move();
     }
 
     @Override
     public void turnRight() {
+
         direction = direction.turnRight();
+        move();
     }
 
     @Override

@@ -13,6 +13,10 @@ public enum Direction {
         Direction[] directions = values();
         return directions[(this.ordinal() - 1 + directions.length) % directions.length];
     }
+    public Direction randomDirection() {
+        Direction[] directions = values();
+        return directions[(int)(Math.random()*directions.length)];
+    }
 }
 
 
